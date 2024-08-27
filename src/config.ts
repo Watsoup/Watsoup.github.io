@@ -49,7 +49,9 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/default-pfp.gif',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Watsoup',
-  bio: 'Clearly a dumbass with too much ambition. Soon-to-be™ bachelor in Software Engineering (fun stuff)',
+  bio: `Clearly a dumbass with too much ambition
+  Soon-to-be™ bachelor in Software Engineering (fun stuff)
+  World Record Holder`,
   links: [
     {
       name: 'Twitter',
