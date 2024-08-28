@@ -39,7 +39,7 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Archive,
     LinkPreset.About,
     {
-      name: 'GitHub',
+      name: 'GitHub Repo',
       url: 'https://github.com/saicaca/fuwari',     // Internal links should not include the base path, as it is automatically added
       external: true,                               // Show an external link icon and will open in a new tab
     },
@@ -49,9 +49,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/default-pfp.gif',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Watsoup',
-  bio: `Clearly a dumbass with too much ambition
-  Soon-to-be™ bachelor in Software Engineering (fun stuff)
-  World Record Holder`,
+  bio: 'Clearly a dumbass with too much ambition. Soon-to-be™ bachelor in Software Engineering (fun stuff). World Record Holder',
   links: [
     {
       name: 'Twitter',
@@ -70,6 +68,11 @@ export const profileConfig: ProfileConfig = {
       icon: 'fa6-brands:github',
       url: 'https://github.com/Watsoup',
     },
+    {
+      name: '@watsoup',
+      icon: 'fa6-brands:discord',
+      url: 'https://discord.com/channels/@me'
+    }
   ],
 }
 
