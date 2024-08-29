@@ -27,9 +27,9 @@ It's not. Here is a (non-exhaustive) list of irritating details about the gamepl
 - Falling into the void doesn't reset your momentum tho, which is used to skip the entire mushroom circuit. It also always put you at the very start of the race, so if you accidentaly fell off the map at the last turn, you just lost an entire _lappe_ (as the game calls them)
 - I could go on...
 
-Design : Big :cross:
+Design : Big ❌
 
-Gameplay : Somehow bigger :cross:
+Gameplay : Somehow bigger ❌
 
 So maybe the music is tolerable ? YES ! The OST is straight up bussin' fr fr no cap. In fact, you should be able to hear the main theme in just a moment. The guitar tab is pretty nicely played. I urge you to listen to the whole OST after reading this blog post.
 
@@ -38,7 +38,7 @@ One thing that really caught my eyes while attempting the speedrun is the first 
 # The speedrun
 
 Ah, the part you actually care about (hopefully). Here is the actual speedrun, I will discuss it a bit bellow.
-<iframe width="100%" height="468" src="https://youtu.be/scI1gt7AhW8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="468" src="https://www.youtube.com/embed/scI1gt7AhW8" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
 Here, we'll see that special tool I was talking about. By using a precise angle we get with the mid-air break, and _precisely_, we can bounce using the wierd wall collisions to skip a considerable chunk of the map. 
 
