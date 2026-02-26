@@ -12,6 +12,9 @@ const postsCollection = defineCollection({
 		category: z.string().optional().nullable().default(""),
 		lang: z.string().optional().default(""),
 
+		/* For Obsidian backlinks */
+		obsidian: z.string().optional().default(""),
+
 		/* For internal use */
 		prevTitle: z.string().default(""),
 		prevSlug: z.string().default(""),

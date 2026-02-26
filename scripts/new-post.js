@@ -15,45 +15,35 @@ function getDate() {
 const args = process.argv.slice(2)
 
 if (args.length === 0) {
-  console.error(`Error: No filename argument provided
-Usage: npm run new-post -- <filename>`)
-  process.exit(1) // Terminate the script and return error code 1
-}
-
-let fileName = args[0]
-
-// Add .md extension if not present
-const fileExtensionRegex = /\.(md|mdx)$/i
-if (!fileExtensionRegex.test(fileName)) {
-  fileName += ".md"
-}
-
-const targetDir = "./src/content/posts/"
-const fullPath = path.join(targetDir, fileName)
-
-if (fs.existsSync(fullPath)) {
-  console.error(`Error: File ${fullPath} already exists `)
+  console.error(`Error: No folder name argument provided
+Usage: npm run new-post -- <post-name>`)
   process.exit(1)
 }
 
-// recursive mode creates multi-level directories
-const dirPath = path.dirname(fullPath)
-if (!fs.existsSync(dirPath)) {
-    fs.mkdirSync(dirPath, { recursive: true })
+const postName = args[0]
+const targetDir = path.join("./src/content/posts/", postName)
+const fullPath = path.join(targetDir, "index.md")
+
+if (fs.existsSync(targetDir)) {
+  console.error(`Error: Folder ${targetDir} already exists`)
+  process.exit(1)
 }
 
+fs.mkdirSync(targetDir, { recursive: true })
+
 const content = `---
-title: ${args[0]}
+title: ${postName}
 published: ${getDate()}
 description: ''
 image: ''
 tags: []
 category: ''
-draft: false 
+draft: false
 lang: ''
+obsidian: ''
 ---
 `
 
-fs.writeFileSync(path.join(targetDir, fileName), content)
+fs.writeFileSync(fullPath, content)
 
 console.log(`Post ${fullPath} created`)

@@ -1,0 +1,1 @@
+/home/maringab/Documents/Obsidian/SecondBrian/2 - Tags/Blog - Inkstreak.md
